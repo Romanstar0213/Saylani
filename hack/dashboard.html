@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainstyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navleft">
+            <h1 class="navheading">Personal Blogging App</h1>
+
+        </div>
+        <div class="navright">
+            <!-- <h4 class="loginname mx-4" onclick="hom()">Home</h4> -->
+            <button class="mx-4 btn hombtn" onclick="hom()">HOME</button>
+            <h4 class="loginname" id="loginname">name</h4>
+            <button class="btn btn-primary navbtn" id="logsign" onclick="logsign()">signUp</button>
+            
+            <!-- <button class="btn btn-primary navbtn" onclick="homesignup()">signUp</button> -->
+
+        </div>
+    </nav>
+    <div class="dashboard">
+        <h1>DASHBOARD</h1>
+    </div>
+
+
+    <div class="dashboard-card-main">
+        <div class="login-main">
+            <div class="login-card col-md-6 col-sm-8 col-lg-6 pt-5">
+                <!-- name -->
+                <div class="form-outline mb-4">
+                    <input type="text" id="blogname" placeholder="Blog name" class="form-control inputs" />
+                </div>
+                <textarea class="textareaa" name="" id="textareaa" cols="30" rows="5"></textarea>
+
+                <!-- Submit button -->
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="sign-btn-div">
+                        <button type="button" id="signupbtn" onclick="post()"
+                            class="btn btn-primary btn-block mb-4">Post
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- my blogs -->
+    <div class="blogdata" id="myblogdata">
+
+        <!-- server data -->
+
+        <!-- <div class="myblogsmain m-3 p-3">
+            <div class="myblogsupper d-flex justify-content-center">
+                <div class="profileimg">
+                    <div class="imagediv">
+                        <img src="https://img.freepik.com/free-icon/user_318-159711.jpg?w=2000" alt="">
+                    </div>
+                </div>
+                <div class="blogtext px-3">
+                    <div class="blogname">dasdasdasd</div>
+                    <div class="postinfo">
+                        <h5>sdasdasdsdsadsad.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="mybloglower px-2">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem id debitis magnam veritatis ipsum
+                    quibusdam
+                    repellendus nulla laudantium! Aliquid eos dolore molestiae quos nam tempore facere nisi, quisquam
+                    sed
+                    debitis.
+                </p>
+
+            </div>
+            <div class="blogbtns d-flex">
+
+                <button class="btn btn-primary mx-2">add</button>
+                <button class="btn btn-primary">delete</button>
+
+            </div>
+        </div> -->
+
+    </div>
+
+
+    <!-- loader -->
+    <div id="loadermain" class="loadermain d-none">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
